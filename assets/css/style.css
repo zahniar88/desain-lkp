@@ -1,15 +1,15 @@
 @font-face {
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
     src: url(../fonts/Montserrat-Regular.ttf);
 }
 
 @font-face {
-    font-family: "Roboto";
+    font-family: "Roboto", sans-serif;
     src: url(../fonts/Roboto-Regular.ttf);
 }
 
 @font-face {
-    font-family: "Acme";
+    font-family: "Acme", sans-serif;
     src: url(../fonts/Acme-Regular.ttf);
 }
 
