@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LKP INSPIRATIF FASHION</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm border-bottom sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html">
+                <span class="text-danger">INSPIRATIF</span> <span class="text-primary">FASHION</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMainMenu"
+                aria-controls="navbarMainMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarMainMenu">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-item nav-link ml-3" href="./index.html">HOME</a>
+                    <div class="dropdown nav-item ml-3">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuProfil" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            PROFIL
+                        </a>
+                        <div class="dropdown-menu rounded-0 border-0 shadow" aria-labelledby="dropdownMenuProfil">
+                            <a class="dropdown-item" href="./sejarah.html">Sejarah</a>
+                            <a class="dropdown-item" href="./visi-misi.html">Visi & Misi</a>
+                            <a class="dropdown-item" href="./struktur-organisasi.html">Struktur Organisasi</a>
+                        </div>
+                    </div>
+                    <a class="nav-item nav-link ml-3" href="./kursus.html">PROGRAM STUDI</a>
+                    <a class="nav-item nav-link ml-3" href="./galeri.html">GALERI</a>
+                    <a class="nav-item nav-link ml-3" href="./artikel.html">ARTIKEL</a>
+                    <div class="dropdown nav-item ml-3">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuDaftarOnline"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            DAFTAR ONLINE
+                        </a>
+                        <div class="dropdown-menu rounded-0 border-0 shadow dropdown-menu-right"
+                            aria-labelledby="dropdownMenuDaftarOnline">
+                            <a class="dropdown-item" href="./pendaftaran.html">Formulir Pendaftaran Online</a>
+                            <a class="dropdown-item" href="./syarat-ketentuan.html">Syarat & Ketentuan Pendaftaran</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- end navbar -->
+
+    <!-- banner -->
+    <div class="jumbotron banner-landing rounded-0 mb-0">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-md-12 text-center text-white">
+                    <p class="lead">Pendaftaran Online</p>
+                    <h2 class="display-3 mb-0">Regsitrasi Online</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end banner -->
+
+    <!-- container -->
+    <div class="container py-5">
+        <form action="/" class="row" method="POST">
+            <!-- header -->
+            <div class="col-md-12 mb-5 text-center">
+                <h2 class="header-formulir">FORUMILIR PENDAFTARAN</h2>
+                <p class="text-muted f-14">Silahkan masukkan data anda dengan benar dan lengkap pada form dibawah ini</p>
+            </div>
+            <!-- end header -->
+
+            <!-- body form data peserta -->
+            <div class="col-md-6 mb-3">
+                <!-- nama lengkap -->
+                <div class="form-group">
+                    <label for="nama">Nama Lengkap <i class="text-danger">*</i></label>
+                    <input type="text" class="form-control rounded-0" name="nama" id="nama" value="" autocomplete="off">
+                </div>
+                <!-- tempat lahir -->
+                <div class="form-group">
+                    <label for="tempat_lahir">Tempat Lahir <i class="text-danger">*</i></label>
+                    <input type="text" class="form-control rounded-0" name="tempat_lahir" id="tempat_lahir" value="" autocomplete="off">
+                </div>
+                <!-- tanggal lahir -->
+                <div class="form-group">
+                    <label for="tanggal_lahir">Tanggal Lahir <i class="text-danger">*</i></label>
+                    <input type="text" class="form-control rounded-0" name="tanggal_lahir" id="tanggal_lahir" value="" autocomplete="off">
+                </div>
+                <!-- jenis kelamin -->
+                <div class="form-group">
+                    <label for="jenis_kelamin">Jenis Kelamin <i class="text-danger">*</i></label>
+                    <select name="jenis_kelamin" id="jenis_kelamin" class="custom-select rounded-0">
+                        <option value="Laki-Laki">Laki-Laki</option>
+                        <option value="Perempuan">Perempuan</option>
+                    </select>
+                </div>
+                <!-- status perkawinan -->
+                <div class="form-group">
+                    <label for="status_perkawinan">Status Perkawinan <i class="text-danger">*</i></label>
+                    <select name="status_perkawinan" id="status_perkawinan" class="custom-select rounded-0">
+                        <option value="Kawin">Kawin</option>
+                        <option value="Belum Kawin">Belum Kawin</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <!-- no identitas -->
+                <div class="form-group">
+                    <label for="no_identitas">No. KTP/SIM/Passport <i class="text-danger">*</i></label>
+                    <input type="text" class="form-control rounded-0" name="no_identitas" id="no_identitas" value="" autocomplete="off">
+                </div>
+                <!-- email -->
+                <div class="form-group">
+                    <label for="email">Email <i class="text-danger">*</i></label>
+                    <input type="text" class="form-control rounded-0" name="email" id="email" value="" autocomplete="off">
+                </div>
+                <!-- nomor handphone -->
+                <div class="form-group">
+                    <label for="nomor_handphone">Nomor Handphone <i class="text-danger">*</i></label>
+                    <input type="text" class="form-control rounded-0" name="nomor_handphone" id="nomor_handphone" value="" autocomplete="off">
+                </div>
+                <!-- whatsapp -->
+                <div class="form-group">
+                    <label for="whatsapp">Whatsapp</label>
+                    <input type="text" class="form-control rounded-0" name="whatsapp" id="whatsapp" value="" autocomplete="off">
+                </div>
+                <!-- foto -->
+                <div class="form-group">
+                    <label for="foto">Foto Berwarna (Ukuran Maks. 1024KB) <i class="text-danger">*</i></label>
+                    <input type="file" class="form-control-file" name="foto" id="foto">
+                </div>
+            </div>
+            <div class="col-md-12 mb-3">
+                <!-- alamat -->
+                <div class="form-group">
+                    <label for="alamat">Alamat <i class="text-danger">*</i></label>
+                    <textarea name="alamat" id="alamat"  class="form-control rounded-0" rows="5"></textarea>
+                </div>
+                <!-- program kursus -->
+                <div class="form-group">
+                    <label for="kursus">Status Perkawinan <i class="text-danger">*</i></label>
+                    <select name="kursus" id="kursus" class="custom-select rounded-0">
+                        <option value="">Pelatihan Menjahit Pakaian Dasar</option>
+                        <option value="">Pelatihan Menjahit Pakaian Dasar</option>
+                        <option value="">Pelatihan Menjahit Pakaian Dasar</option>
+                    </select>
+                </div>
+            </div>
+            <!-- end body form data peserta -->
+
+            <div class="col-md-12 mb-5">
+                <h2 class="header-formulir">Biodata Orang Tua</h2>
+            </div>
+
+            <!-- body form data orang tua -->
+            <div class="col-md-6 mb-3">
+                <!-- nama ayah -->
+                <div class="form-group">
+                    <label for="nama_ayah">Nama Ayah <i class="text-danger">*</i></label>
+                    <input type="text" class="form-control rounded-0" name="nama_ayah" id="nama_ayah" value="" autocomplete="off">
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <!-- pekerjaan ayah -->
+                <div class="form-group">
+                    <label for="pekerjaan_ayah">Pekerjaan Ayah <i class="text-danger">*</i></label>
+                    <input type="text" class="form-control rounded-0" name="pekerjaan_ayah" id="pekerjaan_ayah" value="" autocomplete="off">
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <!-- nama ibu -->
+                <div class="form-group">
+                    <label for="nama_ibu">Nama Ibu <i class="text-danger">*</i></label>
+                    <input type="text" class="form-control rounded-0" name="nama_ibu" id="nama_ibu" value="" autocomplete="off">
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <!-- pekerjaan ibu -->
+                <div class="form-group">
+                    <label for="pekerjaan_ibu">Pekerjaan Ibu <i class="text-danger">*</i></label>
+                    <input type="text" class="form-control rounded-0" name="pekerjaan_ibu" id="pekerjaan_ibu" value="" autocomplete="off">
+                </div>
+            </div>
+            <div class="col-md-12 mb-3">
+                <!-- alamat orang tua -->
+                <div class="form-group">
+                    <label for="alamat_orangtua">Alamat Orang Tua <i class="text-danger">*</i></label>
+                    <textarea name="alamat_orangtua" id="alamat_orangtua" class="form-control rounded-0" rows="5"></textarea>
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <!-- nomor handphone orang tua -->
+                <div class="form-group">
+                    <label for="nomor_handphone_orangtua">Nomor Handphone Orang Tua <i class="text-danger">*</i></label>
+                    <input type="text" class="form-control rounded-0" name="nomor_handphone_orangtua" id="nomor_handphone_orangtua" value="" autocomplete="off">
+                </div>
+            </div>
+            <!-- end body form data orang tua -->
+
+            <div class="col-md-12">
+                <p class="mb-4 f-14">* Baca syarat & ketentuan registrasi online</p>
+                <button class="btn btn-dark btn-sm rounded-0">DAFTAR SEKARANG</button>
+            </div>
+        </form>
+    </div>
+    <!-- end container -->
+
+    <!-- footer -->
+    <footer class="footer bg-dark">
+        <div class="container py-5 text-secondary">
+            <div class="row justofy-content-between">
+                <div class="col-lg-6 text-lg-left text-center">
+                    LKPIF - Lembaga Kursus dan Pelatihan Inspiratif Fashion
+                </div>
+                <div class="col-lg-6 text-lg-right text-center">
+                    &copy; 2020 Lemabaga Kursus dan Pelatihan Inspiratif Fashion
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+
+    <!-- js -->
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

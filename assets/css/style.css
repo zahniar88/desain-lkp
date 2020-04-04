@@ -1,0 +1,524 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Acme";
+    src: url(../fonts/Acme-Regular.ttf);
+}
+
+:root {
+    --red-color: rgb(250, 0, 117);
+}
+
+body {
+    font-family: "Roboto";
+}
+
+.navbar-light .navbar-brand {
+    font-size: 24px;
+    font-family: "Montserrat";
+    font-weight: 600;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    font-family: "Montserrat";
+    font-weight: 600;
+    color: black;
+    font-size: 12px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    border-bottom: 2px dotted var(--red-color);
+    margin-bottom: -2px;
+    color: var(--red-color);
+}
+
+.navbar .dropdown .dropdown-menu {
+    background: var(--dark);
+}
+
+.navbar .dropdown .dropdown-item {
+    font-weight: 500;
+    font-size: 14px;
+    font-family: "Montserrat";
+    color: var(--white);
+    transition: all 0.5s;
+}
+
+.navbar .dropdown .dropdown-item:hover {
+    background: var(--red-color);
+}
+
+.footer {
+    font-family: "Roboto";
+    font-size: 14px;
+}
+
+.banner-landing {
+    background: url(../images/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.banner-landing::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.164),rgba(0, 0, 0, 0.911));
+}
+
+.banner-landing .lead {
+    color: var(--light);
+    font-size: 18px;
+    font-family: "Montserrat";
+    margin-bottom: 0px;
+}
+
+.banner-landing .display-2 {
+    font-family: "Acme";
+}
+
+.banner-landing .display-3 {
+    font-family: "Acme";
+}
+
+@media (max-width: 767.98px) {
+    .banner-landing .lead {
+        font-size: 16px;
+    }
+
+    .banner-landing .display-2 {
+        font-size: 70px;
+    }
+
+    .banner-landing .display-3 {
+        font-size: 62px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .footer {
+        font-size: 12px;
+    }
+
+    .navbar .navbar-brand {
+        font-size: 18px;
+    }
+
+    .banner-landing .lead {
+        font-size: 14px;
+    }
+
+    .banner-landing .display-2 {
+        font-size: 40px;
+    }
+
+    .banner-landing .display-3 {
+        font-size: 52px;
+    }
+}
+
+.banner-landing .btn {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 12px;
+    padding: 7px 18px;
+}
+
+.bg-soft-gray {
+    background: rgb(247, 247, 247);
+}
+
+.header-section {
+    margin-bottom: 50px;
+}
+
+.header-section p {
+    font-size: 12px;
+    font-family: "Montserrat";
+    margin-bottom: 0px;
+    color: var(--secondary);
+}
+
+.header-section h3 {
+    font-weight: bolder;
+    font-size: 32px;
+    font-family: "Montserrat";
+    margin-bottom: 0px;
+}
+
+.header-section h3.with-border-bottom {
+    position: relative;
+}
+
+.header-section h3.with-border-bottom::before {
+    content: "";
+    display: block;
+    width: 10%;
+    height: 100%;
+    bottom: -15px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    position: absolute;
+    border-bottom: 2px solid var(--danger);
+}
+
+@media (max-width: 991.98px) {
+    .header-section h3.with-border-bottom::before {
+        width: 15%;
+    }
+}
+
+@media (max-width: 757.98px) {
+    .header-section h3.with-border-bottom::before {
+        width: 20%;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .header-section h3.with-border-bottom::before {
+        width: 25%;
+    }
+}
+
+.card.program-content {
+    background: transparent;
+    font-family: "Montserrat";
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.card.program-content .card-body {
+    padding: 15px;
+}
+
+.card.program-content .card-title {
+    font-size: 14px;
+}
+
+.card.program-content .card-title>a {
+    color: var(--dark);
+    transition: all 0.3s;
+}
+
+.card.program-content .card-title>a:hover {
+    color: var(--red-color);
+    text-decoration: none;
+}
+
+.card.program-content .card-text {
+    font-size: 12px;
+    font-family: "Roboto";
+    color: var(--secondary);
+}
+
+.card.program-content a.text-link {
+    font-size: 12px;
+    color: var(--dark);
+    font-weight: 600;
+}
+
+.card.program-content a.text-link:hover {
+    color: var(--red-color);
+    text-decoration: none;
+}
+
+.card.content {
+    background: transparent;
+}
+
+.rotate-img .header {
+    overflow: hidden;
+}
+
+.rotate-img .card-img-top {
+    transition: all 0.3s;
+}
+
+.rotate-img:hover .card-img-top {
+    transform: scale(1.19) rotate(5deg);
+    -webkit-transform: scale(1.19) rotate(5deg);
+    -moz-transform: scale(1.19) rotate(5deg);
+    -ms-transform: scale(1.19) rotate(5deg);
+    -o-transform: scale(1.19) rotate(5deg);
+}
+
+.card.content .card-title {
+    font-size: 16px;
+    font-family: "Roboto";
+}
+
+.card.content .card-title a {
+    color: var(--dark);
+}
+
+.card.content .card-title a:hover {
+    text-decoration: none;
+    color: var(--red-color);
+}
+
+.card.content .card-text {
+    font-family: "Roboto";
+    font-size: 14px;
+    color: var(--secondary);
+}
+
+.card.content small {
+    font-size: 11px;
+    font-family: "Roboto";
+    margin-bottom: 5px;
+    display: block;
+}
+
+.if-over-x {
+    overflow-x: auto;
+}
+
+.table-contact {
+    width: 100%;
+    font-size: 14px;
+    font-family: "Roboto";
+}
+
+.table-contact tr td {
+    padding: 5px;
+}
+
+.table-contact td {
+    vertical-align: top;
+}
+
+.table-contact .first {
+    font-weight: bold;
+}
+
+.heading-profil {
+    font-family: "Montserrat";
+}
+
+.heading-profil span {
+    font-size: 14px;
+    color: var(--red-color);
+    display: block;
+}
+
+.heading-profil h4 {
+    font-weight: 600;
+}
+
+.heading-profil h2 {
+    font-size: 42px;
+    font-weight: 600;
+}
+
+.deskripsi-sejarah {
+    font-size: 14px;
+    color: var(--secondary);
+}
+
+.deskripsi-sejarah p {
+    color: var(--secondary);
+}
+
+.visi-misi {
+    font-size: 14px;
+    margin-bottom: 32px;
+}
+
+.visi-misi h2 {
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 32px;
+}
+
+.text-red-color {
+    color: var(--red-color);
+}
+
+.style-check {
+    list-style: none;
+    display: flex;
+    padding: 5px;
+}
+
+.style-check::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    content: "\f00c";
+    margin-right: 10px;
+    color: var(--red-color);
+}
+
+.list-organisasi .card-title {
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 0px;
+}
+
+.list-organisasi .card-text {
+    font-size: 12px;
+    color: var(--secondary);
+    margin-bottom: 0px;
+}
+
+.card.content-horizontal .card-title,
+.card.content-horizontal .card-title a {
+    font-size: 20px;
+    font-family: "Montserrat";
+    color: var(--dark);
+    transition: all 0.3s;;
+}
+
+.card.content-horizontal .card-title:hover,
+.card.content-horizontal .card-title a:hover {
+    color: var(--red-color);
+    text-decoration: none;
+}
+
+.card.content-horizontal div.card-text {
+    font-size: 14px;
+}
+
+.card.content-horizontal p.card-text small {
+    font-size: 11px;
+    font-family: "Montserrat";
+}
+
+.card.content-horizontal .btn {
+    font-size: 12px;
+}
+
+.side-border-card {
+    background: transparent;
+    border: 0px;
+    position: relative;
+}
+
+.side-border-card span {
+    padding: 0px 20px 0px 0px;
+    font-weight: bold;
+    background-color: white;
+    font-size: 12px;
+    font-family: "Montserrat";
+}
+
+.side-border-card span::before {
+    content: "";
+    width: 100%;
+    position: absolute;
+    right: 0;
+    top: 24px;
+    height: 1px;
+    background: var(--red-color);
+    z-index: -1;
+}
+
+.f-12 {
+    font-size: 12px;
+}
+
+.f-14 {
+    font-size: 14px;
+}
+
+a.text-red-color:hover {
+    color: rgb(148, 0, 69);
+    text-decoration: none;
+}
+
+.banner-landing .display-4 {
+    font-family: "Acme";
+    font-size: 42px;
+}
+
+.text-title {
+    font-family: "Montserrat";
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.text-deskripsi {
+    font-family: "Roboto";
+    font-size: 14px;
+}
+
+.title-article {
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.info-article {
+    font-size: 11px;
+    color: var(--secondary);
+    font-family: "Montserrat";
+}
+
+.input-group .form-control {
+    font-size: 14px;
+}
+
+.input-group .btn {
+    font-size: 14px;
+}
+
+.btn-sosmed {
+    transition: all 0.3s;
+    color: var(--white);
+    margin: 0 5px;
+}
+
+.btn-sosmed:hover {
+    border-radius: 50%;
+    transform: rotate(-15deg);
+    -webkit-transform: rotate(-15deg);
+    -moz-transform: rotate(-15deg);
+    -ms-transform: rotate(-15deg);
+    -o-transform: rotate(-15deg);
+    color: var(--white);
+    text-decoration: none;
+}
+
+.btn-fb {
+    padding: 7px 15px;
+    background: rgb(59, 89, 152);
+}
+
+.btn-twitter {
+    padding: 7px 12px;
+    background: rgb(0, 172, 237);
+}
+
+.btn-ig {
+    padding: 7px 12px;
+    background: rgb(254, 31, 73);
+}
+
+.header-formulir {
+    font-family: "Montserrat";
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+
+.form-group label {
+    font-weight: 700;
+    color: var(--secondary);
+}
+
+.form-group * {
+    font-size: 14px;
+}
